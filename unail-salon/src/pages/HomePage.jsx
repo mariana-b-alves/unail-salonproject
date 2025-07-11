@@ -8,7 +8,7 @@ import Header from '../features/templates/Header';
 import SideNav from '../features/templates/SideNav';
 import Footer from '../features/templates/Footer'; 
 
-import '../../public/css/portfolio_index.css';
+import '../../public/css/index.css';
 
 const HomePage = () => {
   const { totalItems } = useContext(CartContext);
