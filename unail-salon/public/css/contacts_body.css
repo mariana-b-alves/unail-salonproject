@@ -1,0 +1,50 @@
+/********GENERAL BODY STYLES********/
+
+section.contacts p, section.qr-code p, section.contact-form p{
+    font-size: .9em;
+    padding: 1.4em 0 1.4em 0;
+}
+
+/********QR-CODE SECTION STYLES********/
+
+.qr-code img{
+    width: 15vw;
+    margin-bottom: 15vh;
+}
+/********CONTACTS SECTION STYLES********/
+
+.contacts svg {
+    padding:0 5px;
+
+    margin-top: 1em;
+}
+
+.contacts a{
+    color: #57402c;
+}
+
+.contacts a:active{
+    color: #b68961;
+}
+
+/********MEDIA QUERIES********/
+
+@media screen and (min-width: 800px){
+    section.contacts, section.contact-form{
+        display: inline-block; 
+
+        text-align: left; 
+
+        margin: 0 auto;
+    }
+
+    .contacts svg{
+        float: left;
+
+        margin-right: 2.5em;
+    }
+
+    .contacts svg p{
+        float: right;
+    }
+}

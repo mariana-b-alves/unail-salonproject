@@ -1,0 +1,36 @@
+ [
+    {
+        "image": "../../public/img/blue-snow-nails.png",
+        "alt": "Mão de uma senhora com unhas francesas à frente de um cenário cinzento. Unhas com pontas azuis, verniz transparente e desenhos de flocos de neve a branco. No cenário pode-se ler a frase 'Release Emotions' ('Liberte Emoções')" 
+    },
+    { 
+        "image": "../../public/img/sparkle-nails.png",
+         "alt": "Unhas transparentes com nuvens e brilhantes. Anéis nos dedos." 
+    },
+    { 
+        "image": "../../public/img/checkered-nails.png", 
+        "alt": "Unhas longas bege com padrão xadrez preto e branco nas pontas." 
+    },
+    { 
+        "image": "../../public/img/mermaid-nails.png",
+        "alt": "Unhas rosa pontiagudas com tema sereia, escamas douradas e conchas." },
+    { 
+        "image": "../../public/img/diamond-nails.png",
+        "alt": "Unhas degradê rosa para branco com aplique em forma de diamante." },
+    { 
+        "image": "../../public/img/orange-flower-nails.png",
+        "alt": "Unhas curtas com flores laranja desenhadas sobre fundo transparente." 
+    },
+    { 
+        "image": "../../public/img/jewel-nails.png",
+        "alt": "Unhas prateadas pontiagudas com joias azuis." 
+    },
+    { 
+        "image": "../../public/img/star-nails.png",
+        "alt": "Unhas curtas com pontas brancas e estrelas coloridas." 
+    },
+    { 
+        "image": "../../public/img/grey-black-flame-nails.png",
+        "alt": "Unhas cinza com chamas pretas e apliques brilhantes." 
+    }
+  ]
