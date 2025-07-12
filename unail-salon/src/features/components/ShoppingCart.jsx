@@ -80,12 +80,18 @@ const ShoppingCart = ({ isOpen, onClose, onConfirm }) => {
                             />
                           </p>
                         )}
-
+                       
                         <button className="btn" onClick={() => removeFromCart(item.id, item.color)}>REMOVER</button>
                       </article>
                     </article>
                   );
                 })}
+                {/*ADDS TOTAL FINAL JUST OUTSIDE THE ARTICLE WHEN EVERTHING ELSE IS (SO THE TOTAL FINAL DOESN'T APPEAR EVERYTIME A NEW ITEM'S ADDED)*/}
+                {cartItems.length > 0 && (
+                   <p style={{ color: '#57402c', textAlign:'center', marginTop: '1em' }}>
+                     Total Final: {totalPrice}€
+                    </p>
+                )}
                 <div className="cart-buttons">
                   <button className="btn" id="confirmBtn" onClick={handleConfirm}>CONFIRMAR</button>
                   <button className="btn" id="cancelBtn" onClick={onClose}>CANCELAR</button>
@@ -94,11 +100,7 @@ const ShoppingCart = ({ isOpen, onClose, onConfirm }) => {
             </>
           )}
         </div>
-        {cartItems.length > 0 && (
-          <p style={{ color: '#57402c', textAlign: 'center', marginTop: '1em' }}>
-            Total Geral: {totalPrice}€
-          </p>
-        )}
+        
       </section>
      
     </>

@@ -1,5 +1,6 @@
 const Footer = () => {
     return (
+        //JUST THE ORIGINAL HTML
         <footer >
             <aside>
                 <section>

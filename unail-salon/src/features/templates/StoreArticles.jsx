@@ -4,8 +4,10 @@ const StoreArticles = ({ categories, searchTerm, filteredProducts }) => {
   return (
     <>
       {Object.entries(categories).map(([title, items]) => (
+        //DYNAMICALLY ADDS THE SUBTITLES ABOVE THE PRODUCT
         <section key={title}>
           <section className="subtitle"><h1>{title}</h1></section>
+          {/*SEARCH BAR WITH FILTER*/}
           <section className="store">
             {filteredProducts(items)
               .filter(p =>

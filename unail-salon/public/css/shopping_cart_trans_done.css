@@ -75,7 +75,7 @@ section.shoppingCart .content {
   text-align: left;
 }
 
-.container {
+section.shoppingCart .container {
   display: flex;
   flex-direction: row;
   align-items: center;

@@ -9,6 +9,7 @@ import '../../../public/css/form.css';
 const TransactionForm = ({ onClose }) => {
   const { cartItems, clearCart } = useContext(CartContext);
 
+  /*SHOW THE ENTIRELY OF THE ITEM FETCHED FROM LOCALSTORAGE (.cartItems)*/
   const productsInCart = cartItems.map((item) => {
     const product = productData[item.id];
     return {
@@ -22,10 +23,12 @@ const TransactionForm = ({ onClose }) => {
     };
   });
 
+   /*TOTALPRICE - MULTIPLY THE AMOUNT SELECTED OF ALL INDIVIDUAL ITEMS BY THEIR PRICE, AND KEEP THE FINAL NUMBER WITH 2 DECIMAL PLACES*/
   const totalPrice = productsInCart
     .reduce((sum, item) => sum + item.price * item.quantity, 0)
     .toFixed(2);
 
+  /*STORES THE INFO THE USER TYPES*/
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -40,16 +43,20 @@ const TransactionForm = ({ onClose }) => {
   const [showModal, setShowModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  //REGISTER THE USER'S TYPING AND UPDATES THE FORM WITH WHAT THE USER WRITERS
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+  //STOPS PAGE FROM REFRESHING THE PAGE WHILE SUBMITTING AND STOPS THE USER FROM CLICKING THE "CONFIRMAR" BTN AGAIN WHILE SUBMITTING.
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (isSubmitting) return;
     setIsSubmitting(true);
+
+    /*CREATE AN EMAIL FORMAT SO WE CAN SEND TO OUR USER WITH THE FULL INFO*/
 
     const cartData = productsInCart.map(item => {
       return `
@@ -68,11 +75,14 @@ const TransactionForm = ({ onClose }) => {
       total: totalPrice,
     };
 
+    /*FETCH FORMSPREE - WAY WE'RE SENDING OUR EMAIL*/
     fetch('https://formspree.io/f/xldnzjyd', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload),
     })
+
+    /*IF THE EMAIL WAS SUCCESSFULLY SENT, THE FORM (AND SHOPPING CART) ARE CLEARED AND TRANSACTION DONE (success msg)IS SHOWN...*/
       .then((res) => {
         if (res.ok) {
           setIsTransactionSuccess(true);
@@ -86,6 +96,7 @@ const TransactionForm = ({ onClose }) => {
             postal: '',
             taxPayerNumber: '',
           });
+        /*...OTHERWISE, TRANSACTION ERR (ERROR MSG) IS SHOWN AND the FORM (AND SHOPPING CART) ARE NOT CLEARED*/
         } else {
           setIsTransactionSuccess(false);
         }
@@ -98,12 +109,14 @@ const TransactionForm = ({ onClose }) => {
       .finally(() => setIsSubmitting(false));
   };
 
+  //OPENS OVERLAY WHEN THE TRANSACTION FORM'S OPEN: OTHERWISE IT CLOSES IT
   const handleOverlayClick = (e) => {
     if (e.target.classList.contains('transactionForm')) {
       onClose();
     }
   };
 
+  //FORM STRUCTURE
   return (
     <section
       className="transactionForm open"

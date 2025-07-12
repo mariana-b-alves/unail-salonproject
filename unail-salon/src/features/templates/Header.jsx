@@ -1,21 +1,40 @@
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-const Header = ({ totalItems, onCartClick, onMenuClick }) => (
-  <header>
-    <figure>
-      <Link to="/">
-        <img src="/img/unail-logo.png" alt="Logo da U Nail" />
-      </Link>
-    </figure>
-    <nav>
-      <ul>
-        <li><Link to="/portfolio">PORTEFÓLIO</Link></li>
-        <li><Link to="/prices">PREÇÁRIO</Link></li>
-        <li><Link to="/store">LOJA</Link></li>
-        <li><Link to="/contacts">CONTACTOS</Link></li>
-      </ul>
-      <div className="nav-icons">
+const Header = ({ totalItems, onCartClick, onMenuClick }) => {
+  const location = useLocation();
+
+  return (
+    <header>
+      <figure>
+        <Link to="/">
+          <img src="/img/unail-logo.png" alt="Logo da U Nail" />
+        </Link>
+      </figure>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/portfolio" className={location.pathname === '/portfolio' ? 'active' : ''}>
+              PORTEFÓLIO
+            </Link>
+          </li>
+          <li>
+            <Link to="/prices" className={location.pathname === '/prices' ? 'active' : ''}>
+              PREÇÁRIO
+            </Link>
+          </li>
+          <li>
+            <Link to="/store" className={location.pathname === '/store' ? 'active' : ''}>
+              LOJA
+            </Link>
+          </li>
+          <li>
+            <Link to="/contacts" className={location.pathname === '/contacts' ? 'active' : ''}>
+              CONTACTOS
+            </Link>
+          </li>
+        </ul>
+        <div className="nav-icons">
         {/*CLICKING THE CART BTN OPENS UP SHOPPING CART*/}
         <div className="cart-icon-container" onClick={onCartClick}>
           <span className="material-symbols-outlined shopping-cart-icon">shopping_cart</span>
@@ -28,7 +47,8 @@ const Header = ({ totalItems, onCartClick, onMenuClick }) => (
       </div>
     </nav>
   </header>
-);
+  );
+};
 
 Header.propTypes = {
   totalItems: PropTypes.number.isRequired,
@@ -37,3 +57,4 @@ Header.propTypes = {
 };
 
 export default Header;
+

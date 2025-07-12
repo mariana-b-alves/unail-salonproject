@@ -1,0 +1,33 @@
+[
+    {
+      "title": "Manicure Gelinho",
+      "price": "15,00€",
+      "image": "img/manicure-gelinho.png",
+      "alt": "Preçário da U Nail de serviço de Manicure Gelinho a 15€. Inclui: Cortar, limar, remover cutículas, aplicar gelinho de base, cores e esmalte de camada superior."
+    },
+    {
+      "title": "Extensão Unhas de Gel",
+      "price": "20,00€",
+      "image": "img/extensao-unhas-gel.png",
+      "alt": "Preçário da U Nail de serviço de Extensão Unhas de Gel a 20€.Inclui: Cortar, limar, remover cutículas, aplicar gelinho de base, cores e esmalte de camada superior."
+    },
+    {
+      "title": "Manicure Gel",
+      "price": "25,00€",
+      "image": "img/manicure-gel.png",
+      "alt": "Preçário da U Nail de serviço de Manicure Gel a 25€. Inclui: Cortar, limar, remover cutículas, aplicar gelinho de base, cores e esmalte de camada superior."
+    },
+    {
+      "title": "Extensão Unhas Acrílico",
+      "price": "35,00€",
+      "image": "img/manicure-gel-acrilico.png",
+      "alt": "Preçário da U Nail de serviço de Extensão Unhas Acrílico a 35€. Inclui: Cortar, limar, remover cutículas e aplicar gel de base, cores e top coat."
+    },
+    {
+      "title": "Extensão Unhas de Gel Encapsuladas",
+      "price": "30,00€",
+      "image": "img/extensao-unhas-encapsuladas.png",
+      "alt": "Preçário da U Nail de serviço de Extensão Unhas de Gel Encapsuladas a 30€. Inclui: Cortar, limar, remover cutículas e aplicar gel de base, cores e top coat."
+    }
+  ]
+  

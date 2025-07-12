@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 export const CartContext = createContext();
 
-/*SEE transactionForm.js AND cartSummary.js*/
+/*GETS ITEMS STORE INSIDE LOCALSTORAGE*/
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState(() => {
     const stored = localStorage.getItem('cartItems');
