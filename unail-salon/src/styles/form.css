@@ -1,0 +1,198 @@
+/******** TRANSACTION FORM STYLES ********/
+section.transactionForm {
+    display: none;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    overflow-y: auto;
+
+    z-index: 101;
+  }
+  
+  section.transactionForm h1, section.transactionForm p, label{
+    color:#57402c
+  }
+
+  section.transactionForm.open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow-y: auto;
+  }
+  
+  /******** CONTAINER STYLES ********/
+
+  .container{
+   display: flex; 
+   flex-direction: column; 
+   max-width: 200px; 
+   margin: 0 auto;
+  }
+  
+  .container-all {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    background-color: #f4f1ed;
+    width: 100%;
+    max-width: 900px;
+    max-height: 90vh; 
+
+    margin: 0 auto;
+
+    border-radius: 15px;
+
+    overflow-y: auto;
+
+    text-align: center;
+  }
+  
+  .container-product,.container-info {
+    flex: 1;
+    box-sizing: border-box;
+    
+    padding: 2em;
+  }
+  
+  .container-product {
+    flex-direction: column;
+    text-align: left;
+
+    background-color: #f4f1ed;
+
+    gap: 1em;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .container-info {
+    position: relative;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  
+    padding-left: 2em;
+  }
+  
+  .container-info::before {
+    content: '';
+    position: absolute;
+    top: 3em;
+    height: 70%;
+    width: 3px;
+    background-color: #b68961;
+  }
+  /******** FORM STYLES ********/
+  .form-info {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1em;
+  }
+  
+  label {
+    display: block;
+
+    width: 100%;
+    max-width: 15em;
+
+    text-align: left;
+
+    margin-top: 0.75em;
+  }
+  
+  input, select {
+    width: 100%;
+    max-width: 20em;
+
+    padding: 0.45em 1.5em 0.7em 0.85em;
+    margin-top: 1em;
+
+    border-radius: 15px;
+    border: 3px solid #57402c;
+
+    background-color: #f4f1ed;
+    color: #b68961;
+  }
+  
+  input:focus {
+    background-color: #efd8d0;
+    color: #57402c;
+  }
+  
+  /******** BUTTON STYLES ********/
+  .addRemoveItemsCounter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  button.plus, button.minus, .add {
+    font-size: 1.95em;
+    font-weight: 400;
+  }
+  
+  .plus, .minus {
+    background-color: transparent;
+    color: #57402c;
+  }
+  
+  .closeBtn {
+    position: absolute;
+
+    cursor: pointer;
+
+    font-size: 4em;
+
+    color: #57402c;
+  }
+  
+  .closeBtn:hover, .closeBtn:active {
+    color: #efd8d0;
+  }
+  
+section.contacts .btn {
+    width: 9.2em;
+    font-size: 0.85em;
+    margin-top: 2em;
+  }
+
+  /******** MEDIA QUERY ********/
+  @media screen and (min-width: 900px) {
+    section.transactionForm.open {
+      align-items: center;
+    }
+  
+    .container-all {
+      flex-direction: row;
+      height: 90vh;
+    }
+  
+    .container-product {
+      border-radius: 15px 0 0 15px;
+
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  
+    .container-info {
+      border-radius: 0 15px 15px 0;
+    }
+  }
+  

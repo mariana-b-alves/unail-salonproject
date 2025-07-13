@@ -7,8 +7,8 @@ const TransactionErr = ({ onClose }) => {
     <section className="transactionErr open" onClick={onClose}>
       <article className="container-all">
 
-        <article className="container-this">
-          <div className="centered-content">
+        <article className="container-content">
+          <div className="content">
             <i className="fa-solid fa-triangle-exclamation"></i>
             <p>Não conseguimos concluir a sua compra. </p>
             <p>Tente outra vez mais tarde ou tente utilizar outro meio de pagamento.</p>

@@ -1,0 +1,126 @@
+section.transactionDone, section.transactionErr {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.4);
+
+  transition: opacity 0.3s ease;
+
+  z-index: 101;
+}
+
+section.transactionDone.open, section.transactionErr.open {
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+
+section.transactionDone .btn, section.transactionErr .btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+/******* CONTAINER STYLES *******/
+section.transactionDone .container-all, section.transactionErr .container-all {
+  position: relative;
+
+  margin: auto;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+section.shoppingCart .content {
+  margin-left: 5em;
+  color: #57402c;
+  text-align: left;
+}
+
+section.shoppingCart .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f4f1ed;
+  border-radius: 15px;
+  padding: 3em 1.45em;
+
+  width: auto;
+  height: auto;
+  max-width: 800px;
+}
+
+section.transactionDone .closeBtn, section.transactionErr .closeBtn {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  font-size: 4em;
+}
+
+.fa-circle-check, .fa-triangle-exclamation {
+  font-size: 9.3em;
+  margin: 0.32em 0 0.43em 0;
+}
+
+.fa-circle-check {
+  color: #00bf63;
+}
+
+.fa-triangle-exclamation {
+  color: #ce0101;
+}
+
+/******** P STYLES ********/
+
+section p:first-of-type {
+  padding-top: 0.75em;
+  font-size: 1em;
+}
+
+section.transactionDone p, section.transactionErr p {
+  padding-bottom: 1.45em;
+  font-size: 1.25em;
+
+  text-align: center;
+  width: 100%;  
+}
+
+section.transactionDone p:last-of-type {
+  padding-bottom: 4.7em;
+}
+
+/******** BUTTON STYLES ********/
+
+#confirmBtn, #cancelBtn {
+  margin-top: 0.7em;
+  margin-right: 0.8em;
+  cursor: pointer;
+}
+
+.btn {
+  margin-top: 2em;
+}
+
+/******** H1 STYLES ********/
+
+.subtitle h1 {
+  font-size: 1.5em;
+  margin: 2em 0 2.4em 0;
+
+  font-weight: 200;
+}

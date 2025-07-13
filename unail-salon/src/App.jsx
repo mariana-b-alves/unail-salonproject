@@ -6,7 +6,8 @@ import StorePage from './pages/StorePage.jsx';
 import ProductDetail from './pages/ProductDetail.jsx';
 import ContactsPage from './pages/ContactsPage.jsx';
 import { CartProvider } from './features/components/CartContext.jsx';
-
+import './index.css';
+import './App.css'
 
 
 function App() {

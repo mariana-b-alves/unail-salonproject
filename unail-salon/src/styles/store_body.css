@@ -1,0 +1,107 @@
+/********INPUT AND BTN STYLES********/
+
+section.searchBarSection i, section.searchBarSection input{
+    margin-left: 1em;
+}
+
+section.searchBarSection i{
+    color: #57402c;
+    font-size: 1.5em;
+}
+
+
+section.searchBarSection input:focus{
+    background-color:#efd8d0;
+    color: #57402c;
+}
+
+section.searchBarSection input{
+    color: #b68961;
+
+    border: 3px solid #57402c;
+    width: 40vw;
+    border-radius: 10px;
+
+    padding: .5em 1em;
+    margin-bottom: 5em;
+
+    gap: 1em;
+}
+
+
+/********H1 STYLES********/
+
+.subtitle h1{
+    font-size: 1.5em;
+    margin: 2em 0 2.4em 0;
+
+    font-weight: 200;
+}
+
+/********IMG STYLES********/
+
+section:not(.sideNav){
+    text-align: center;
+}
+
+section.store img{
+    object-fit:cover;
+    object-position: center center;
+
+    border-radius: 15px;
+}
+
+section.store img{
+    width: 200px;
+    height: 200px;
+}
+
+/********P STYLES********/
+
+section p:first-of-type, section p:nth-of-type(2){
+    padding-bottom: .75em;
+}
+
+section p:first-of-type{
+    padding-top: .75em;
+    font-size: .85em;
+}
+
+section.store p:nth-of-type(3){
+    font-weight: 600;
+
+    padding-bottom: 1em;
+}
+
+
+article.content p:nth-of-type(5){
+    padding-bottom: 1.85em;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+
+/********NTH-OF-TYPE STYLES********/
+
+section.store:nth-of-type(6){
+    padding-bottom: 10em;
+}
+
+@media screen and (min-width: 900px){
+    section.store{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr))
+    }
+
+    section.searchBar{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+      .content{
+        margin-left: 5em;
+      }
+
+}

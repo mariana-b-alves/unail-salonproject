@@ -1,5 +1,4 @@
 import { useState, useContext } from "react";
-import "../../public/css/store_prices_index.css";
 import productData from '../data/productData.json';
 import Footer from '../features/templates/Footer'; 
 import { CartContext } from '../features/components/CartContext';
@@ -8,6 +7,9 @@ import TransactionForm from '../features/components/TransactionForm';
 import Header from '../features/templates/Header';
 import SideNav from '../features/templates/SideNav';
 import StoreArticles from '../features/templates/StoreArticles'; 
+
+import "../styles/store_index.css";
+
 
 const StorePage = () => {
   const { totalItems } = useContext(CartContext);

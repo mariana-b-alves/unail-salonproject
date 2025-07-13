@@ -1,0 +1,179 @@
+/*************NAV STYLES*************/
+
+header{
+    background-color: #b68961;
+
+    display: flex;
+
+    position: fixed;
+
+    z-index:101;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 15vh;
+
+    padding: 40px 25px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+
+    font-weight: 400;
+    width: 9em;
+}
+
+header figure {
+    flex: 1;
+
+    display: flex;
+    
+    align-items: center;
+}
+
+header nav {
+    flex: 2;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul {
+    display: none;
+
+    font-size: 1.05em;
+
+    align-items: center;
+    justify-content: center; 
+
+    gap: 2.6em; 
+
+    list-style-type: none;
+}
+
+header ul li a{
+    background-image: linear-gradient(#57402c, #57402c);
+    background-size: 0% 0.07em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    
+    transition: background-size 0.2s ease-in-out;
+}
+
+header ul :last-child{
+    margin-left: auto;
+}
+
+header ul li a:hover{
+    background-size: 100% 0.07em;
+   
+    transform: scale(1.2);
+}
+
+header ul li a:hover, .active, div.hamburger:active, div.hamburger:hover .active, .hover{
+    color: #57402c;
+    
+    background-image: linear-gradient(#57402c, #57402c);
+    background-size: 100% 0.07em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+
+}
+
+div.hamburger{
+    color: white;
+
+    font-size: 2em;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/********LOGO STYLES********/
+
+figure > img{
+    width: 9em;
+}
+
+
+/********SHOPPING CART STYLES********/
+.material-symbols-outlined{
+    color: white;
+    cursor: pointer;
+}
+
+.material-symbols-outlined:hover, .material-symbols-outlined:active{
+    color: #57402c;
+}
+
+.shopping-cart-icon {
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 2em;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+
+    gap: 1em;
+    margin-left: auto;
+}
+/********SHOPPING CART BADGES STYLES********/
+
+.cart-icon-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.shopping-cart-icon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+.shopping-cart-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+
+  top: -1em;
+  right: -.7em;
+
+  background-color: #57402c;
+  color: white;
+
+  font-size: .65em;
+  font-weight: bold;
+
+  padding: .4em;
+
+  border-radius: 50%;
+
+  min-width: 1.5em;
+  height: 1.5em;
+  
+  pointer-events: none;
+  user-select: none;
+}
+
+  
+@media screen and (min-width:900px) {
+    header ul {
+        display: flex;
+    }
+
+    div.hamburger {
+        display: none;
+    }
+}

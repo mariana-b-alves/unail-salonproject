@@ -5,7 +5,7 @@ import TransactionForm from '../features/components/TransactionForm';
 import Header from '../features/templates/Header';
 import SideNav from '../features/templates/SideNav';
 import Footer from '../features/templates/Footer';
-import '../../public/css/contacts_index.css';
+import '../styles/contacts_index.css';
 
 const ContactsPage = () => {
   const { totalItems } = useContext(CartContext);

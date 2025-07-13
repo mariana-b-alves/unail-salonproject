@@ -4,8 +4,8 @@
         "alt": "Mão de uma senhora com unhas francesas à frente de um cenário cinzento. Unhas com pontas azuis, verniz transparente e desenhos de flocos de neve a branco. No cenário pode-se ler a frase 'Release Emotions' ('Liberte Emoções')" 
     },
     { 
-        "image": "../../public/img/sparkle-nails.png",
-         "alt": "Mão de uma senhora, vestida com uma blusa de lã e com um anel no indicador e no médio. Unhas longas, com pontas arredondadas, transparentes, com desenho de nuvens a branco, com apliques e brilhantes." 
+        "image": "../../public/img/lipton-nails.png",
+         "alt": "Mão de uma senhora a segurar um Lipton Ice Tea de pêssego. Unhas curtas, quadradas com degradê laranja para amarelo. No dedo anelar, vê-se uma palmeira desenhada a preto" 
     },
     { 
         "image": "../../public/img/checkered-nails.png", 
@@ -13,21 +13,21 @@
     },
     { 
         "image": "../../public/img/mermaid-nails.png",
-        "alt": "Unhas rosa pontiagudas com tema sereia, escamas douradas e conchas." },
+        "alt": "Unhas cor de rosa com pontas pontiagudas. Unhas com tema de sereia com desenho de escamas a dourado, apliques de conchas e brilhantes."},
     { 
         "image": "../../public/img/diamond-nails.png",
-        "alt": "Unhas degradê rosa para branco com aplique em forma de diamante." },
+        "alt": "Mão de uma senhora, vestida com uma blusa de algodão, com unhas longas e redondas nas pontas. Unhas com degradê rosa para branco. No dedo do médio, vê-se um aplique de diamante, com forma de coração, que ocupa metade da unha." },
     { 
         "image": "../../public/img/orange-flower-nails.png",
-        "alt": "Unhas curtas com flores laranja desenhadas sobre fundo transparente." 
+        "alt": "Mão de uma senhora com unhas curtas. Unhas transparentes, com a ponta branca. No meio tem duas rosas laranjas desenhadas." 
     },
     { 
         "image": "../../public/img/jewel-nails.png",
-        "alt": "Unhas prateadas pontiagudas com joias azuis." 
+        "alt": "Unhas longas, pontiagudas, prateadas. Unhas com apliques prateados com joias azuis." 
     },
     { 
-        "image": "../../public/img/star-nails.png",
-        "alt": "Mãos de uma senhora a segurar uma caneca branca. Unhas curtas, francesas, com as pontas brancas com estrelas cor de rosa e roxa desenhadas." 
+        "image": "../../public/img/pink-sparkle-nails.png",
+        "alt": "Mãos de uma senhora a segurar um verniz cor-de-rosa com efeito translúcido. Unhas curtas, pintada de cor-de-rosa, translúcidas. No dedo anelar, vêem-se apliques holográficos." 
     },
     { 
         "image": "../../public/img/grey-black-flame-nails.png",

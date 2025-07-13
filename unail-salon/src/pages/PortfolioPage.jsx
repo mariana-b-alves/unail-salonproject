@@ -8,7 +8,7 @@ import Footer from '../features/templates/Footer';
 import PortfolioPopup from '../features/templates/PortfolioPopup';
 
 
-import '../../public/css/portfolio_index.css';
+import '../styles/portfolio_index.css';
 
 const PortfolioPage = () => {
   const { totalItems } = useContext(CartContext);

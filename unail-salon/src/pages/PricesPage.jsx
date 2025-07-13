@@ -7,7 +7,7 @@ import SideNav from '../features/templates/SideNav';
 import Footer from '../features/templates/Footer';
 import PricesPopup from '../features/templates/PricesPopup';
 
-import '../../public/css/store_prices_index.css';
+import '../styles/prices_index.css';
 
 const PricesPage = () => {
   const { totalItems } = useContext(CartContext);

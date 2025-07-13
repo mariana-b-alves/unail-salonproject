@@ -1,0 +1,32 @@
+.info-section{
+    text-align: center;
+    
+}
+.info-article{
+    height: 130vh;
+    padding-top: 15em;    
+}
+
+.info-article h1{
+    font-size: 4em;
+    padding-bottom: 1.6em;
+}
+
+.info-article p{
+    padding-bottom: 1.3em;
+}
+
+.about-us{
+    background-color: #57402c;
+    color: #efd8d0;
+}
+
+.discounts{
+    background-color: #f1e5dc;
+    color: #b68961;
+}
+
+.local{
+    background-color: #fff;
+    color: #57402c;
+}

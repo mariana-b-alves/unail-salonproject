@@ -7,7 +7,7 @@ import TransactionForm from '../features/components/TransactionForm';
 import Header from '../features/templates/Header';
 import SideNav from '../features/templates/SideNav';
 import Footer from '../features/templates/Footer';
-import '../../public/css/products_index.css';
+import '../styles/product_index.css';
 
 const ProductDetail = () => {
   const { productId } = useParams();
