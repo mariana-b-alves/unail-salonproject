@@ -1,0 +1,47 @@
+.portfolio {
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    grid-auto-rows: 50vw;
+    gap: 1em;
+
+    padding: 0 2em 6em 2em;
+  }
+
+  .portfolio figure {
+    height: 100%;
+    width: 100%;
+  }
+
+  .portfolio img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+@media screen and (min-width: 800px) {
+    .portfolio{
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 50vh;
+    }
+
+    .c2xr1{
+        grid-column: span 2;
+    }
+    
+    .c2xr2{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    
+    .c3xr2{
+        grid-column: span 3;
+        grid-row: span 2;
+    }
+    
+    .c3xr1{
+        grid-column: span 3;
+    }
+
+}
