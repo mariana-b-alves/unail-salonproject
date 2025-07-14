@@ -4,7 +4,8 @@ import productData from '../../data/productData.json';
 import TransactionDone from './TransactionDone.jsx';
 import TransactionErr from './TransactionErr.jsx';
 import PropTypes from 'prop-types';
-import '../../../public/css/form.css';
+import '../../styles/form.css';
+import '../../styles/trans_done_err.css';
 
 const TransactionForm = ({ onClose }) => {
   const { cartItems, clearCart } = useContext(CartContext);

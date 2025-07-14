@@ -4,7 +4,8 @@ import { useContext, useState } from 'react';
 import { CartContext } from './CartContext';
 import productData from '../../data/productData.json';
 import PropTypes from 'prop-types';
-import '../../../public/css/shopping_cart_trans_done.css';
+import '../../styles/form.css';
+import '../../styles/trans_done_err.css';
 
 /*SAME AS JS*/
 const ShoppingCart = ({ isOpen, onClose, onConfirm }) => {

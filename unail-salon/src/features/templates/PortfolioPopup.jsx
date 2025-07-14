@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import portfolioImages from '../../data/portfolioImages.json';
-import '../../../public/css/allPopup.css';
+import '../../styles/allPopup.css';
 
 const PortfolioPopup = () => {
   const [selectedImage, setSelectedImage] = useState(null);

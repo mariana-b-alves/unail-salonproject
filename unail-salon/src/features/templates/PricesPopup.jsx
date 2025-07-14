@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import pricesImages from '../../data/pricesImages.json';
-import '../../../public/css/allPopup.css';
+import '../../styles/allPopup.css';
 
 const PricesPopup = () => {
   const [selectedImage, setSelectedImage] = useState(null);

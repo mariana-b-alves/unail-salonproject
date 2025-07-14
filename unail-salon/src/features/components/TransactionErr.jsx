@@ -1,4 +1,4 @@
-import '../../../public/css/form.css';
+import '../../styles/form.css';
 import PropTypes from 'prop-types';
 
 
