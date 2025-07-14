@@ -22,7 +22,6 @@ const ProductDetail = () => {
   /*THE QUANTITY RESETS BACT TO ONE AND CHOSES THE FIRST COLOUR AS THE DEFAULT; NONE IF THE ITEM DOESN'T HAVE A COLOUR OPTION*/
   useEffect(() => {
     setQuantity(1);
-    setSelectedColor(product?.colors?.[0] || null);
   }, [productId]);
 
   if (product == false) {

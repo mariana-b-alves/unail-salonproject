@@ -1,6 +1,6 @@
 /*ShoppingCart.jsx -> CART'S CLIENT AND AESTHETIC SIDE*/
 
-import { useContext} from 'react';
+import { useContext, useState } from 'react';
 import { CartContext } from './CartContext';
 import productData from '../../data/productData.json';
 import PropTypes from 'prop-types';
@@ -9,6 +9,7 @@ import '../../../public/css/shopping_cart_trans_done.css';
 /*SAME AS JS*/
 const ShoppingCart = ({ isOpen, onClose, onConfirm }) => {
   const { cartItems, removeFromCart, clearCart } = useContext(CartContext);
+  const [setTransactionResult] = useState(null); 
 
   const totalPrice = cartItems
     .reduce((sum, item) => {
